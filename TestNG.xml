@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="nopcommerce_V5">
+	<listeners>
+		<listener class-name="com.nopcommerce_V5.utlities.ExtentReport" />
+	</listeners>
+	<test name="nopcommerce_V5_Test_chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.nopcommerce_V5.testcases.TC1_LoginTest" />
+			<class name="com.nopcommerce_V5.testcases.TC2_LoginTest" />
+
+		</classes>
+	</test>
+<!-- 
+	<test name="nopcommerce_V5_Test_firefox">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.nopcommerce_V5.testcases.TC1_LoginTest" />
+			<class name="com.nopcommerce_V5.testcases.TC2_LoginTest" />
+		</classes>
+	</test>
+
+
+	<test name="nopcommerce_V5_Test_ie">
+		<parameter name="browser" value="ie" />
+		<classes>
+			<class name="com.nopcommerce_V5.testcases.TC1_LoginTest" />
+			<class name="com.nopcommerce_V5.testcases.TC2_LoginTest" />
+		</classes>
+	</test>-->
+</suite>
